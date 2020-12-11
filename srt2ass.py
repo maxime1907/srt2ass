@@ -89,7 +89,7 @@ PlayResY: 1080
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: SubStyle,Arial,60,&H00FFFFFF,&H0300FFFF,&H00000000,&H02000000,0,0,0,0,100,100,0,0,1,3.75,0,2,0,0,78,1
+Style: Default,Arial,60,&H00FFFFFF,&H0300FFFF,&H00000000,&H02000000,0,0,0,0,100,100,0,0,1,3.75,0,2,0,0,78,1
 
 [Events]
 Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text'''
@@ -104,15 +104,16 @@ ScaledBorderAndShadow: yes
 YCbCr Matrix: TV.709
 PlayResX: 1920
 PlayResY: 1080
-Script Updated By: Arisaka V2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: SubStyle,Verdana,55.5,&H00FFFFFF,&H000000FF,&H00282828,&H00000000,-1,0,0,0,100.2,100,0,0,1,3.75,0,2,0,0,79,1
+Style: Default,Verdana,55.5,&H00FFFFFF,&H000000FF,&H00282828,&H00000000,-1,0,0,0,100.2,100,0,0,1,3.75,0,2,0,0,79,1
 Style: BottomRight,Arial,30,&H00FFFFFF,&H000000FF,&H00282828,&H00000000,0,0,0,0,100,100,0,0,1,2,2,3,10,10,10,1
 Style: TopLeft,Arial,30,&H00FFFFFF,&H000000FF,&H00282828,&H00000000,0,0,0,0,100,100,0,0,1,2,2,7,10,10,10,1
 Style: TopRight,Arial,30,&H00FFFFFF,&H000000FF,&H00282828,&H00000000,0,0,0,0,100,100,0,0,1,2,2,9,10,10,10,1
-'''
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text'''
     output_str = utf8bom + head_str + '\n' + subLines
 #    output_str = output_str.encode(encoding)
 
