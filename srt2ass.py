@@ -48,7 +48,7 @@ def srt2ass(input_file, sub_type):
 
     for ln in range(len(lines)):
         line = lines[ln]
-        if line.isdigit() and re.match('-?\d\d:\d\d:\d\d', lines[(ln+1)]):
+        if line.isdigit() and ln+1 < len(lines) and re.match('-?\d\d:\d\d:\d\d', lines[(ln+1)]):
             if tmpLines:
                 subLines += tmpLines + "\n"
             tmpLines = ''
@@ -89,7 +89,7 @@ PlayResY: 1080
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Default,Arial,60,&H00FFFFFF,&H0300FFFF,&H00000000,&H02000000,0,0,0,0,100,100,0,0,1,3.75,0,2,0,0,78,1
+Style: Default,Verdana,50,&H00FFFFFF,&H000000FF,&H00282828,&H00000000,-1,0,0,0,100,100,0,0,1,1.75,0,2,0,0,35,1
 
 [Events]
 Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text'''
